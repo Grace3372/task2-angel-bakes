@@ -1,14 +1,5 @@
-import { defineConfig } from "vite";
-import nunjucks from "vite-plugin-nunjucks";
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [
-    nunjucks({
-      templatesDir: "src/templates"
-    })
-  ],
-  build: {
-    outDir: "dist",
-    emptyOutDir: true
-  }
-});
+  base: '/task2-angel-bakes/',
+})
